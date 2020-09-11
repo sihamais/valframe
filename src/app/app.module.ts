@@ -13,14 +13,7 @@ import { AuthGuardService } from './services/auth/auth-guard.service';
 
 const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent },
-  {
-    path: 'main', component: MainComponent,
-    children: [
-      { path: 'value-drivers', component: ValueDriversComponent },
-      { path: 'differentiators', component: DifferentiatorsComponent },
-    ]
-  },
-
+  { path: 'main', component: MainComponent },
   { path: '', redirectTo: 'main', pathMatch: 'full' },
   { path: '**', redirectTo: 'main' }
 ];

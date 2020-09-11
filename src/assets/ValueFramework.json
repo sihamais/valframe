@@ -1,0 +1,123 @@
+{
+  "product": "Value Framework",
+  "version": 1.2,
+  "releaseDate": "2020",
+  "overview": [
+    {
+      "name": "Value Drivers",
+      "description": [
+        "These are the things that the prospect is likely proactively looking for or needing.",
+        "These are generally revenue, cost, or risk related.",
+        "These are top-of-mind customer topics that exist even if GitLab doesn’t.",
+        "They could cause a buyer to re-allocate discretionary funds.",
+        "They support a value-based conversation (mutually exclusive, collectively exhaustive)."
+      ],
+      "structure": [
+        "Before Scenario",
+        "Negative Consequences",
+        "After Scenario",
+        "Positive Business Outcomes",
+        "Required Capabilities",
+        "Metrics",
+        "How GitLab Does It",
+        "Better",
+        "Proof Points",
+        "Discovery Questions"
+      ]
+    },
+    {
+      "name": "Differentiators",
+      "description": [
+        "They can influence a technical buyer’s decision criteria through Required Capabilities.",
+        "Each Differentiator contains a Description, Customer Value, Defensibility and Trap-Setting.",
+        "Unique – Not available from any other vendor. Leading products or services that only GitLab can provide.",
+        "Comparative – Superior attributes when compared to other companies, often feature or service-based.",
+        "Holistic – Attributes of GitLab that would make a customer feel good about doing business with us."
+      ],
+      "structure": [
+        "The Differentiator itself",
+        "Its value to the customer",
+        "Its defensibility, similar to Proof Points, our customer’s point of view.",
+        "Trap-Setting Questions; the topics you’ll want to bring up to drive prospects to the Differentiator."
+      ]
+    }
+  ],
+  "value drivers": {
+    "value": "Increase Operational Efficiencies",
+    "description": "Simplify the software development toolchain to reduce total cost of ownership",
+    "before": {
+      "Process": [
+        "manual",
+        "complex"
+      ],
+      "Tools": [
+        "don't scale",
+        "too many",
+        "legacy",
+        "custom",
+        "homegrown",
+        "outages"
+      ],
+      "People": [
+        "functional silos",
+        "misaligned priorities",
+        "working on wrong things",
+        "fighting fires",
+        "dissatisfied"
+      ],
+      "Integrations": [
+        "brittle",
+        "complicated"
+      ]
+    },
+    "Negative Consequences": [
+      "Lower productivity; more rework; slower cycle time",
+      "Toolchain is expensive to license and support",
+      "Poor developer experience; wasted talent; high turnover in engineering",
+      "Product launch delays"
+    ],
+    "After": {
+      "Process": [
+        "simplified",
+        "predictable SDLC process",
+        "less ramp time",
+        "reduced context switching"
+      ],
+      "Tools": [
+        "scale with business and developer needs",
+        "more complete coverage",
+        "no customization"
+      ],
+      "People": [
+        "teams are more productive and collaborative"
+      ],
+      "Integrations": [
+        "fewer",
+        "less complicated"
+      ]
+    },
+    "Positive Business Outcomes": [
+      "Reduce product development and delivery costs",
+      "Elimination of bottlenecks leads to agility and faster time to market",
+      "Happy developers - attract and retain top talent",
+      "Move engineers from integration and maintenance to value-add activities"
+    ],
+    "Required Capabilities": [
+      "  Consistent and efficient developer experience across the development lifecycle",
+      "Centralized reporting and visibility across the development lifecycle",
+      "At point of code change, developers can assess and resolve security, compliance and code quality issues",
+      "Solution that automatically scales to match performance and cost demands of the organization",
+      "Public cloud independent; develop in one place, deploy anywhere",
+      "SaaS and/or self-managed"
+    ],
+    "Metrics": [
+      "Lower costs (license, FTEs and compute) of development",
+      "Increase developer/team productivity",
+      "Reduce cycle time (lead time)",
+      "Increase deployment frequency",
+      "Reduce change failure rate",
+      "Reduce MTTR (mean time to recover/restore)",
+      "Improve developer satisfaction and retention"
+    ]
+  }
+}
