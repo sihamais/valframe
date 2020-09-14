@@ -46,16 +46,21 @@ export class MainComponent implements OnInit {
     const i = this.path.length;
     console.log(i);
     let j = 0;
-    let res= response;
-    while( j < i){
+    let res = response;
+    while (j < i) {
       res = res[this.path[j]];
       console.log(res);
       j++;
     }
-      for (let x in res) {
-        console.log(x);
-        this.keys.push(x);
-      }
+    // if (+res != NaN) {
+    //   this.keys.push(res);
+    // }
+    // else {
+    for (let x in res) {
+      console.log(x);
+      this.keys.push(x);
+    }
+    // }
   }
 
   onClick(key: string) {
@@ -66,6 +71,13 @@ export class MainComponent implements OnInit {
   }
 
   searchKey(key: string) {
-
+    this.keys = [];
+    for (let i = 0; i < this.path.length; i++) {
+      if (this.path[i] == key) {
+        this.path = this.path.slice(0, i+1);
+        this.strPath = this.strPath.slice(0,i+1);
+      }
+    }
+    this.onParseJSON(key);
   }
 }
