@@ -2,9 +2,8 @@
   "product": "Value Framework",
   "version": 1.2,
   "releaseDate": "2020",
-  "overview": [
-    {
-      "name": "Value Drivers",
+  "overview": {
+     "Value Drivers": {
       "description": [
         "These are the things that the prospect is likely proactively looking for or needing.",
         "These are generally revenue, cost, or risk related.",
@@ -25,8 +24,7 @@
         "Discovery Questions"
       ]
     },
-    {
-      "name": "Differentiators",
+     "Differenciators": {
       "description": [
         "They can influence a technical buyer’s decision criteria through Required Capabilities.",
         "Each Differentiator contains a Description, Customer Value, Defensibility and Trap-Setting.",
@@ -40,12 +38,12 @@
         "Its defensibility, similar to Proof Points, our customer’s point of view.",
         "Trap-Setting Questions; the topics you’ll want to bring up to drive prospects to the Differentiator."
       ]
-    }
-  ],
-  "value drivers": {
-    "value": "Increase Operational Efficiencies",
-    "description": "Simplify the software development toolchain to reduce total cost of ownership",
-    "before": {
+     }
+  },
+  "Value Drivers": {
+    "Value": "Increase Operational Efficiencies",
+    "Description": "Simplify the software development toolchain to reduce total cost of ownership",
+    "Before": {
       "Process": [
         "manual",
         "complex"

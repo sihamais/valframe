@@ -1,32 +1,29 @@
 <header>
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <a class="navbar-brand" routerLink="/main">ValFrame</a>
-</nav>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" routerLink="/main">ValFrame</a>
+    </nav>
 </header>
 
 <section class="page-section">
-<div class="container-fluid">
-    <div class="card-deck justify-content-center">
-        <a routerLink="/value-drivers">
-            <div class="card w-500">
-                <div class="card-body">
-                    <div class="card-text">
-                        <h3>Value Drivers</h3>
+    <div class="container-fluid">
+        <div class="path">
+            <div *ngFor="let i of strPath" class="path_text">
+                <a (click)="searchKey(this.i)"> {{ i }} </a>
+                <p class="arrow"> > </p>
+            </div>
+        </div>
+        <div class="card-deck justify-content-center">
+            <a *ngFor="let key of keys" (click)="onClick(this.key)">
+                <div class="card w-500">
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h3>{{key}}</h3>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </a>
-        <a routerLink="/differentiators">
-            <div class="card w-500 h-500">
-                <div class="card-body">
-                    <div class="card-text">
-                        <h3>Differenciators</h3>
-                    </div>
-                </div>
-            </div>
-        </a>
+            </a>
+        </div>
     </div>
-</div>
 </section>
 
 <footer class="bg-light py-5">

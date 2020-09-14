@@ -30,3 +30,22 @@ a:hover{
 .footer{
     bottom: 0px;
 }
+
+.path{
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+}
+
+.path_text{
+    display: flex;
+}
+
+.arrow{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.path a:hover {
+    text-decoration: underline;
+}
