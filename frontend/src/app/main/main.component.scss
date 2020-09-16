@@ -25,6 +25,7 @@ section{
 a:hover{
     text-decoration:none;
     color: black;
+    cursor: pointer;
 }
 
 .footer{
@@ -39,6 +40,7 @@ a:hover{
 
 .path_text{
     display: flex;
+    color: #004484;
 }
 
 .arrow{
@@ -48,4 +50,9 @@ a:hover{
 
 .path a:hover {
     text-decoration: underline;
+    cursor: pointer;
+}
+
+#card:hover{
+    background-color: #F8F9FA;
 }

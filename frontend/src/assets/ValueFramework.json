@@ -101,7 +101,7 @@
       "Move engineers from integration and maintenance to value-add activities"
     ],
     "Required Capabilities": [
-      "  Consistent and efficient developer experience across the development lifecycle",
+      "Consistent and efficient developer experience across the development lifecycle",
       "Centralized reporting and visibility across the development lifecycle",
       "At point of code change, developers can assess and resolve security, compliance and code quality issues",
       "Solution that automatically scales to match performance and cost demands of the organization",

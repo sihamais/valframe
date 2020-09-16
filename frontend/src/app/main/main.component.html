@@ -13,8 +13,8 @@
             </div>
         </div>
         <div class="card-deck justify-content-center">
-            <a *ngFor="let key of keys" (click)="onClick(this.key)">
-                <div class="card w-500">
+            <a *ngFor="let key of keys" (click)="switchKey(this.key)">
+                <div class="card w-500" id="card">
                     <div class="card-body">
                         <div class="card-text">
                             <h3>{{key}}</h3>

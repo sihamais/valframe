@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { GraphService } from '../services/graph/graph.service';
+import { DataService } from '../services/data/data.service';
 
 @Component({
   selector: 'app-main',
@@ -12,29 +12,32 @@ export class MainComponent implements OnInit {
   keys = [];
   path = [];
   strPath = [];
+  product;
 
   constructor(private router: Router,
-    private graphService: GraphService) { }
+    private dataService: DataService) { }
 
   ngOnInit(): void {
     this.firstParse();
   }
 
   firstParse() {
-    this.graphService.getJSON().subscribe(response => {
+    this.path= [];
+    this.dataService.getJSON().subscribe(response => {
+      this.product = response.product;
+      this.strPath.push(this.product);
       this.keys = [];
-      for (let x in response.overview) {
+      for (let x in response) {
         this.keys.push(x);
       }
     }, error => {
-      // handle error here
-      // error.status to get the error code
+      console.log("error");
     });
   }
 
 
   onParseJSON(key?: string) {
-    this.graphService.getJSON().subscribe(response => {
+    this.dataService.getJSON().subscribe(response => {
       this.extractKeys(response);
     }, error => {
       // handle error here
@@ -44,26 +47,23 @@ export class MainComponent implements OnInit {
 
   extractKeys(response: any) {
     const i = this.path.length;
-    console.log(i);
     let j = 0;
     let res = response;
     while (j < i) {
       res = res[this.path[j]];
-      console.log(res);
       j++;
     }
-    // if (+res != NaN) {
-    //   this.keys.push(res);
-    // }
-    // else {
-    for (let x in res) {
-      console.log(x);
-      this.keys.push(x);
+    if (typeof res === 'string' || typeof res === 'number' ){
+        this.keys.push(res);
     }
-    // }
+    else {
+      for (let x in res) {
+        this.keys.push(x);
+      }
+    }
   }
 
-  onClick(key: string) {
+  switchKey(key: string) {
     this.strPath.push(key);
     this.path.push(key);
     this.keys = [];
@@ -76,6 +76,9 @@ export class MainComponent implements OnInit {
       if (this.path[i] == key) {
         this.path = this.path.slice(0, i+1);
         this.strPath = this.strPath.slice(0,i+1);
+      }
+      else if(this.path[i] == this.product){
+        this.firstParse();
       }
     }
     this.onParseJSON(key);
