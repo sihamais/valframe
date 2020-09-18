@@ -7,17 +7,18 @@
 <section class="page-section">
     <div class="container-fluid">
         <div class="path">
-            <div *ngFor="let i of strPath" class="path_text">
-                <a (click)="searchKey(this.i)"> {{ i }} </a>
+            <div *ngFor="let i of path" class="path_text">
+                <a (click)="searchKey(this.i)"> {{ i.value }} </a>
                 <p class="arrow"> > </p>
             </div>
         </div>
         <div class="card-deck justify-content-center">
-            <a *ngFor="let key of keys" (click)="switchKey(this.key)">
+            <a *ngFor="let key of keys" [ngStyle]="{'pointer-events':disabled===true ? 'none' : 'auto'}" (click)="switchKey(this.key)">
                 <div class="card w-500" id="card">
                     <div class="card-body">
                         <div class="card-text">
-                            <h3>{{key}}</h3>
+                            <h3>{{key.value}}</h3>
+                            <p *ngFor="let i of key.desc.value">{{i}}</p>
                         </div>
                     </div>
                 </div>
