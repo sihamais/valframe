@@ -12,7 +12,7 @@ rm -rf jekyll
 # Push build to gl-pages branch for Gitlab Pages
 git add -A && \
 git commit -m "$*" && \
-git subtree push --prefix=dist/ValFrame origin glp && \
+git subtree push --prefix=dist/ValFrame origin gl-pages && \
 rm -rf dist && \
 
 git add -A && \

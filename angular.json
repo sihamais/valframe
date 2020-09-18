@@ -124,6 +124,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ValFrame"
+    }
+  },
+  "defaultProject": "ValFrame",
+  "cli": {
+    "analytics": "9f49a57a-a43d-4429-aa0a-13b3fb09506a"
+  }
 }
