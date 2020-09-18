@@ -1,0 +1,60 @@
+@keyframes divAnim {
+    from {left: -30px;}
+  to {left: 0px;}
+}
+
+.navbar-brand{
+    font-weight: 700;
+    color: #343a40;
+}
+
+
+#card{
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    max-width: 400px;
+    animation-name: divAnim;
+    animation-duration: 2s;
+}
+
+.card-body{
+    color: #495057;
+    margin: auto;
+}
+
+a:hover{
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+}
+
+.path{
+    margin: 10px;
+    text-align: center;
+    font-weight: 500;
+    display: flex;
+}
+
+.path_text{
+    display: flex;
+    color: #004484;
+}
+
+.arrow{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.path a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#card:hover{
+    background-color: #F8F9FA;
+}
+
+.card-text{
+    margin-bottom : 0px;
+}

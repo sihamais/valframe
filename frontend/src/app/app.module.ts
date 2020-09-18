@@ -4,7 +4,6 @@ import { Routes, ExtraOptions, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
-import { MainComponent } from './main/main.component';
 import { AuthComponent } from './auth/auth.component';
 import { AuthService } from './services/auth/auth.service';
 import { AuthGuardService } from './services/auth/auth-guard.service';
@@ -12,9 +11,8 @@ import { DataService } from './services/data/data.service';
 
 const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent },
-  { path: 'main', component: MainComponent },
-  { path: '', redirectTo: 'main', pathMatch: 'full' },
-  { path: '**', redirectTo: 'main' }
+  { path: '', redirectTo: 'app-root', pathMatch: 'full' },
+  { path: '**', redirectTo: 'app-root' }
 ];
 
 const routerOptions: ExtraOptions = {
@@ -25,7 +23,6 @@ const routerOptions: ExtraOptions = {
 @NgModule({
   declarations: [
     AppComponent,
-    MainComponent,
     AuthComponent,
   ],
   imports: [
