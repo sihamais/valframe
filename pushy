@@ -1,0 +1,21 @@
+#!/bin/bash
+
+ng build && \
+
+# Add Jekyll files to angular build
+git clone https://gitlab.com/pages/jekyll && \
+rm jekyll/index.html && \
+mv jekyll/* dist/ValFrame && \
+mv jekyll/.gitlab-ci.yml dist/ValFrame && \
+rm -rf jekyll
+
+# Push build to gl-pages branch for Gitlab Pages
+git add -A && \
+git commit -m "$*" && \
+git subtree push --prefix=dist/ValFrame origin glp && \
+rm -rf dist && \
+
+git add -A && \
+
+# Commit the code to master branch
+git commit -m "$*" && git push origin master
