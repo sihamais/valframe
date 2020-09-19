@@ -1,29 +1,27 @@
 <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" (click)="firstParse()">ValFrame</a>
+        <a class="navbar-brand" (click)="firstParse()">Valframe</a>
     </nav>
 </header>
 
-    <div class="path">
-        <div *ngFor="let i of path" class="path_text">
-            <a (click)="searchKey(this.i)"> {{ i.value }} </a>
-            <p class="arrow"> > </p>
-        </div>
+<div class="path">
+    <div *ngFor="let i of path" class="path_text">
+        <a (click)="searchKey(this.i)"> {{ i.value }} </a>
+        <p class="arrow"> > </p>
     </div>
-        <div class="card-columns justify-content-center">
-            <a *ngFor="let key of keys" [ngStyle]="{'pointer-events':disabled===true ? 'none' : 'auto'}"
-                (click)="switchKey(this.key)">
-                <div class="col-md card mx-auto mb-3" id="card">
-                    <div class="card-body">
-                        <div class="card-text">
-                            <h5 class="card-title text-center">{{key.value}}</h5>
-                            <p class="card-text text-left" *ngFor="let i of key.desc.value">{{i}}</p>
-                        </div>
+</div>
+<div class="container-fluid mx-10">
+    <div class="card-columns justify-content-center">
+        <a *ngFor="let key of keys" [ngClass]="{'disabled' : key.child === 'null',
+    'abled': key.child!=='null'}" (click)="switchKey(this.key)">
+            <div class="card mx-auto mb-3" id="card">
+                <div class="card-body">
+                    <div class="card-text">
+                        <h5 class="card-title text-center">{{key.value}}</h5>
+                        <li class="card-text text-left" *ngFor="let i of key.desc.value">{{i}}</li>
                     </div>
                 </div>
-            </a>
-        </div>
-
-<footer class="bg-light py-5">
-    <div class="small text-center text-muted">Copyright © 2020</div>
-</footer>
+            </div>
+        </a>
+    </div>
+</div>

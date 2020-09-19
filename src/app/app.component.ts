@@ -8,11 +8,10 @@ import { DataService } from './services/data/data.service';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'ValFrame';
+  title = 'Valframe';
 
   keys = [];
   path = [];
-  disabled: boolean = false;
 
   constructor(private router: Router,
     private dataService: DataService) { }
@@ -22,32 +21,29 @@ export class AppComponent {
   }
 
   firstParse() {
-    this.disabled = false;
     this.path = [];
     this.keys = [];
     this.dataService.getJSON().subscribe(response => {
       this.keys.push(response.infos);
     }, error => {
-      console.log("error");
+      console.log("error on the parse");
     });
   }
 
   extractKeys(response: any) {
     for (let x in response) {
       this.keys.push(response[x]);
-      if (response[x].child=="null"){
-        this.disabled = true;
-      }
-      else{
-        this.disabled = false;
-      }
     }
   }
 
   switchKey(key) {
     this.path.push(key);
     this.keys = [];
-    this.extractKeys(key.child);
+    if (key.child == "null"){
+      console.log("end of the path");
+    }else{
+      this.extractKeys(key.child);
+    }
   }
 
   searchKey(key) {

@@ -102,6 +102,29 @@
                   ]
                 },
                 "child": "null"
+              },
+              {
+                "value": "How we do it",
+                "desc": {
+                  "value": []
+                },
+                "child": [
+                  {
+                    "value": "Complete DevOps Platform",
+                    "desc": {
+                      "value": [
+                        "Start with GitLab just on the use case that you need to improve",
+                        "Increase developer/team productivity",
+                        "Reduce cycle time (lead time)",
+                        "Increase deployment frequency",
+                        "Reduce change failure rate",
+                        "Reduce MTTR (mean time to recover/restore)",
+                        "Improve developer satisfaction and retention"
+                      ]
+                    },
+                    "child": "null"
+                  }
+                ]
               }
             ]
           },
