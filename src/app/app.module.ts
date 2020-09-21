@@ -8,6 +8,7 @@ import { AuthComponent } from './auth/auth.component';
 import { AuthService } from './services/auth/auth.service';
 import { AuthGuardService } from './services/auth/auth-guard.service';
 import { DataService } from './services/data/data.service';
+import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 
 const appRoutes: Routes = [
   { path: 'auth', component: AuthComponent },
@@ -28,7 +29,8 @@ const routerOptions: ExtraOptions = {
   imports: [
     HttpClientModule,
     BrowserModule,
-    RouterModule.forRoot(appRoutes)
+    RouterModule.forRoot(appRoutes),
+    FontAwesomeModule
   ],
   providers: [
     AuthService,

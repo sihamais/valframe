@@ -39,19 +39,25 @@ export class AppComponent {
   switchKey(key) {
     this.path.push(key);
     this.keys = [];
-    if (key.child == "null"){
+    if (key.child == "null") {
       console.log("end of the path");
-    }else{
+    } else {
       this.extractKeys(key.child);
     }
   }
 
   searchKey(key) {
+    console.log(key);
     this.keys = [];
-    for (let i = 0; i < this.path.length; i++) {
-      if (this.path[i] == key) {
-        this.path = this.path.slice(0, i + 1);
-        this.extractKeys(key.child);
+    if (this.path.length < 0) {
+      this.firstParse();
+    }
+    else {
+      for (let i = 0; i < this.path.length; i++) {
+        if (this.path[i] == key) {
+          this.path = this.path.slice(0, i + 1);
+          this.extractKeys(key.child);
+        }
       }
     }
   }

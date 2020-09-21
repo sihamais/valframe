@@ -1,5 +1,9 @@
 image: ruby:latest
 
+#workflow:
+#  rules:
+#    - if: '$CI_COMMIT_BRANCH'
+
 variables:
   JEKYLL_ENV: production
   LC_ALL: C.UTF-8
@@ -26,4 +30,4 @@ pages:
     paths:
     - public
   only:
-  - master
+  - gl-pages

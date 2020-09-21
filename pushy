@@ -6,13 +6,14 @@ ng build && \
 git clone https://gitlab.com/pages/jekyll && \
 rm jekyll/index.html && \
 mv jekyll/* dist/ValFrame && \
-mv jekyll/.gitlab-ci.yml dist/ValFrame && \
-rm -rf jekyll
+rm -rf jekyll && \
+cp gl-pages_yml dist/ValFrame/.gitlab-ci.yml && \
 
 # Push build to gl-pages branch for Gitlab Pages
 git add -A && \
 git commit -m "$*" && \
-git subtree push --prefix=dist/ValFrame origin gl-pages && \
+git push origin `git subtree split --prefix dist/ValFrame master`:gl-pages --force && \
+#git subtree push --prefix=dist/ValFrame origin gl-pages && \
 rm -rf dist && \
 
 git add -A && \

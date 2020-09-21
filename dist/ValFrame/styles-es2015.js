@@ -60,7 +60,7 @@ module.exports = exports;
 var ___CSS_LOADER_API_IMPORT___ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 exports = ___CSS_LOADER_API_IMPORT___(true);
 // Module
-exports.push([module.i, "html {\n  height: 100%;\n  font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody {\n  height: 100%;\n}", "",{"version":3,"sources":["/Users/Siham/Desktop/SihamAis.gitlab.io/src/styles.scss","styles.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,kNAAA;ACCJ;;ADEA;EACI,YAAA;ACCJ","file":"styles.scss","sourcesContent":["html{\n    height: 100%;\n    font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody{\n    height: 100%;\n}","html {\n  height: 100%;\n  font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody {\n  height: 100%;\n}"]}]);
+exports.push([module.i, "html {\n  height: 100%;\n  font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody {\n  height: 100%;\n}", "",{"version":3,"sources":["/Users/Siham/Desktop/PP/SihamAis.gitlab.io/src/styles.scss","styles.scss"],"names":[],"mappings":"AAAA;EACI,YAAA;EACA,kNAAA;ACCJ;;ADEA;EACI,YAAA;ACCJ","file":"styles.scss","sourcesContent":["html{\n    height: 100%;\n    font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody{\n    height: 100%;\n}","html {\n  height: 100%;\n  font-family: \"Merriweather\", -apple-system, BlinkMacSystemFont, \"Segoe UI\", Roboto, \"Helvetica Neue\", Arial, \"Noto Sans\", sans-serif, \"Apple Color Emoji\", \"Segoe UI Emoji\", \"Segoe UI Symbol\", \"Noto Color Emoji\";\n}\n\nbody {\n  height: 100%;\n}"]}]);
 // Exports
 module.exports = exports;
 
@@ -490,8 +490,8 @@ module.exports = exported;
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! /Users/Siham/Desktop/SihamAis.gitlab.io/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
-module.exports = __webpack_require__(/*! /Users/Siham/Desktop/SihamAis.gitlab.io/src/styles.scss */"./src/styles.scss");
+__webpack_require__(/*! /Users/Siham/Desktop/PP/SihamAis.gitlab.io/node_modules/bootstrap/dist/css/bootstrap.css */"./node_modules/bootstrap/dist/css/bootstrap.css");
+module.exports = __webpack_require__(/*! /Users/Siham/Desktop/PP/SihamAis.gitlab.io/src/styles.scss */"./src/styles.scss");
 
 
 /***/ })
