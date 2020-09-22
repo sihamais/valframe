@@ -47,9 +47,8 @@ export class AppComponent {
   }
 
   searchKey(key) {
-    console.log(key);
     this.keys = [];
-    if (this.path.length < 0) {
+    if (this.path.length == 1) {
       this.firstParse();
     }
     else {
@@ -60,5 +59,9 @@ export class AppComponent {
         }
       }
     }
+  }
+
+  logOut(){
+    this.router.navigate(['/auth']);
   }
 }

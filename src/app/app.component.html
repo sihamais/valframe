@@ -1,15 +1,18 @@
 <header>
-    <nav class="navbar navbar-expand-lg navbar-light bg-white">
-        <a class="navbar-brand" (click)="firstParse()">Valframe</a>
+    <nav class="navbar navbar-light bg-white justify-content-between">
+        <button *ngIf="this.path.length > 0" type="button" class="btn btn-light"
+            (click)="searchKey(this.path[this.path.length-2])"><</button>
+        <div class="navbar-brand">
+            <a class="navbar-brand align-self-center" (click)="firstParse()">Valframe</a>
+        </div>
+        <div class="nav-item"><button (click)="logOut()" class="btn btn-light auth">Log out</button></div>
     </nav>
 </header>
 
-<div class="d-flex path">
-    <button *ngIf="this.path.length > 0" type="button" class="btn btn-secondary ml-2 mr-3 align-self-center" (click)="searchKey(this.path[this.path.length-2])">Previous</button>
-    <div *ngFor="let i of path" class="path_text align-self-center mt-3">
-        <a (click)="searchKey(this.i)"> {{ i.value }} </a>
-        <p class="arrow"> > </p>
-    </div>
+<div class="path align-items-stretch">
+    <p  class="path_text align-self-center">
+        <a *ngFor="let i of path" (click)="searchKey(this.i)"> {{ i.value }} > </a>
+    </p>
 </div>
 <div class="container-fluid mx-10">
     <div class="card-columns justify-content-center">
@@ -18,7 +21,7 @@
             <div class="card mx-auto mb-3" id="card">
                 <div class="card-body">
                     <div class="card-text">
-                        <h5 class="card-title text-center text-secondary font-weight-normal">{{key.value}}</h5>
+                        <h5 class="card-title text-center font-weight-normal">{{key.value}}</h5>
                         <li class="card-text text-left" *ngFor="let i of key.desc.value">{{i}}</li>
                     </div>
                 </div>

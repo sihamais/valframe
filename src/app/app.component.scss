@@ -4,7 +4,7 @@
 }
 
 .navbar-brand{
-    font-weight: 700;
+    font-weight: 500;
 }
 
 #card{
@@ -37,12 +37,11 @@ a:hover{
 .path_text{
     margin-top: auto;
     margin-bottom:auto;
-    display: flex;
     color: #0037B4;
 }
 
 .card-title{
-    color: #C51F00;
+    color: #41007A;
 }
 
 .arrow{
@@ -72,6 +71,16 @@ a:hover{
     background-color: red;
     color: white;
     text-align: center;
+  }
+
+  .navbar a{
+      color: black;
+  }
+
+.btn-secondary{
+    padding: 0px;
+    background-color: transparent;
+    color: black;
   }
 
   .disabled{
