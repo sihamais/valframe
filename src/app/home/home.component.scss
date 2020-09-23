@@ -1,0 +1,92 @@
+@keyframes divAnim {
+    from {left: 30px;}
+  to {left: 0px;}
+}
+
+.navbar-brand{
+    font-weight: 500;
+}
+
+#card{
+    z-index: 99;
+    margin: 0 auto;
+    float: none;
+    margin-bottom: 10px;
+    max-width: 500px;
+    animation-name: divAnim;
+    animation-duration: 2s;
+}
+
+
+.card-body{
+    color: #495057;
+    margin: auto;
+}
+
+a:hover{
+    text-decoration:none;
+    color: black;
+    cursor: pointer;
+}
+
+.path{
+    margin: 10px;
+    color: #0037B4;
+}
+
+.path_text{
+    margin-top: auto;
+    margin-bottom:auto;
+    color: #0037B4;
+}
+
+.card-title{
+    color: #41007A;
+}
+
+.arrow{
+    margin-left: 4px;
+    margin-right: 4px;
+}
+
+.path a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#card:hover{
+    background-color: #F8F9FA;
+}
+
+.card-text{
+    margin-bottom : 0px;
+    font-size: 14px;
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+
+  .navbar a{
+      color: black;
+  }
+
+.btn-secondary{
+    padding: 0px;
+    background-color: transparent;
+    color: black;
+  }
+
+  .disabled{
+      pointer-events: none;
+  }
+
+  .abled{
+      pointer-events: auto;
+  }
