@@ -12,6 +12,7 @@ import { DataService } from './services/data/data.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 
+
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'login', component: AuthComponent },

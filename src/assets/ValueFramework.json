@@ -97,13 +97,17 @@
                     "Lower costs (license, FTEs and compute) of development",
                     "Increase developer/team productivity",
                     "Reduce cycle time (lead time)",
-                    "Increase deployment frequency",
+                    "Increase <a href=\"https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency\">deployment frequency</a>",
                     "Reduce change failure rate",
                     "Reduce MTTR (mean time to recover/restore)",
                     "Improve developer satisfaction and retention"
                   ]
                 },
-                "child": "null"
+                "child": "null",
+                "links": [
+                  {"value":"deployment frequency",
+                  "link":"<a href=\"https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency\">deployment frequency</a>"}
+                ]
               },
               {
                 "value": "How we do it",

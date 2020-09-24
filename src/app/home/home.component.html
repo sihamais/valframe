@@ -25,7 +25,8 @@
                 <div class="card-body">
                     <div class="card-text">
                         <h5 class="card-title text-center font-weight-normal">{{key.value}}</h5>
-                        <li class="card-text text-left" *ngFor="let i of key.desc.value">{{i}}</li>
+                        <li class="card-text text-left" *ngFor="let i of key.desc.value" innerHTML="{{i}}">
+                        </li>
                     </div>
                 </div>
             </div>

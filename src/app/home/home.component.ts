@@ -7,7 +7,9 @@ import { DataService } from '../services/data/data.service';
   selector: 'app-home',
   templateUrl: './home.component.html',
   styleUrls: ['./home.component.scss']
+
 })
+
 export class HomeComponent implements OnInit {
 
   keys = [];
@@ -31,6 +33,7 @@ export class HomeComponent implements OnInit {
 
   extractKeys(response: any) {
     for (let x in response) {
+     // this.links(response[x]);
       this.keys.push(response[x]);
     }
   }
@@ -42,6 +45,21 @@ export class HomeComponent implements OnInit {
       console.log("end of the path");
     } else {
       this.extractKeys(key.child);
+    }
+  }
+
+  links(key) {
+    if (key.links) {
+      for (let i = 0; i < key.desc.value.length; i++) {
+        console.log(key.desc.value[i]);
+        for (let j = 0; j < key.links.length; j++) {
+          console.log(key.links[j].value);
+          if (key.desc.value[i].includes(key.links[j].value)) {
+            key.desc.value[i].innerHTML = key.links[j].link;
+            console.log(key.links[j].value);
+          }
+        }
+      }
     }
   }
 
