@@ -54,10 +54,6 @@ a:hover{
     cursor: pointer;
 }
 
-#card:hover{
-    background-color: #F8F9FA;
-}
-
 .card-text{
     margin-bottom : 0px;
     font-size: 14px;
@@ -87,8 +83,25 @@ a:hover{
       pointer-events: none;
   }
 
+  .disabled:hover{
+      background-color: none;
+  }
+
+  .card-text a{
+      pointer-events: initial;
+  }
+
+  .card-text a:hover{
+      background-color: none;
+  }
+
   .abled{
+      cursor: pointer;
       pointer-events: auto;
+  }
+
+  .abled #card:hover{
+    background-color: #F8F9FA;
   }
 
   .back{

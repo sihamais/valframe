@@ -6,3 +6,11 @@ html{
 body{
     height: 100%;
 }
+
+li a {
+    pointer-events: auto;
+}
+
+li a:hover{
+    background-color: none;
+}

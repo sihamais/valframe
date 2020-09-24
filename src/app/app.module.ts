@@ -11,6 +11,7 @@ import { AuthGuardService } from './services/auth/auth-guard.service';
 import { DataService } from './services/data/data.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
+import { SafeHtmlPipe } from './home/SafeHtml.pipe';
 
 
 const appRoutes: Routes = [
@@ -26,6 +27,7 @@ const routerOptions: ExtraOptions = {
 
 @NgModule({
   declarations: [
+    SafeHtmlPipe,
     AppComponent,
     AuthComponent,
     HomeComponent,
@@ -38,6 +40,7 @@ const routerOptions: ExtraOptions = {
     FontAwesomeModule
   ],
   providers: [
+    SafeHtmlPipe,
     AuthService,
     AuthGuardService,
     DataService

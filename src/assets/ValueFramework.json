@@ -32,10 +32,10 @@
                 "value": "Before",
                 "desc": {
                   "value": [
-                    "Process - manual; complex",
-                    "Tools - don't scale; too many; legacy; custom; homegrow; outages",
-                    "People - functional silos; misaligned priorities; working on wrong things; fighting fires; dissatisfied",
-                    "Integrations - brittle; complicated"
+                    "<b>Process</b> - manual; complex",
+                    "<b>Tools</b> - don't scale; too many; legacy; custom; homegrow; outages",
+                    "<b>People</b> - functional silos; misaligned priorities; working on wrong things; fighting fires; dissatisfied",
+                    "<b>Integrations</b> - brittle; complicated"
                   ]
                 },
                 "child": "null"
@@ -56,10 +56,10 @@
                 "value": "After",
                 "desc": {
                   "value": [
-                    "Process - simplified, predictable SDLC process; less ramp time; reduced context switching",
-                    "Tools - scale with business and developer needs; more complete coverage; no customization",
-                    "People - teams are more productive and collaborative",
-                    "Integrations - fewer; less complicated"
+                    "<b>Process</b> - simplified, predictable SDLC process; less ramp time; reduced context switching",
+                    "<b>Tools</b> - scale with business and developer needs; more complete coverage; no customization",
+                    "<b>People</b> - teams are more productive and collaborative",
+                    "<b>Integrations</b> - fewer; less complicated"
                   ]
                 },
                 "child": "null"
@@ -97,7 +97,7 @@
                     "Lower costs (license, FTEs and compute) of development",
                     "Increase developer/team productivity",
                     "Reduce cycle time (lead time)",
-                    "Increase <a href=\"https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency\">deployment frequency</a>",
+                    "Increase <a class=links href=https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency target=_blank rel=noopener noreferrer>deployment frequency</a>",
                     "Reduce change failure rate",
                     "Reduce MTTR (mean time to recover/restore)",
                     "Improve developer satisfaction and retention"
@@ -105,8 +105,7 @@
                 },
                 "child": "null",
                 "links": [
-                  {"value":"deployment frequency",
-                  "link":"<a href=\"https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency\">deployment frequency</a>"}
+                  "<a href=https://about.gitlab.com/handbook/marketing/product-marketing/devops-metrics/#deployment-frequency"
                 ]
               },
               {
