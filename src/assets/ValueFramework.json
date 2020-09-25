@@ -286,13 +286,13 @@
                     "child": "null"
                   },
                   {
-                    "value": "<b>Value Driver-Specific Questions (Increase Operational Efficiencies)</b>",
+                    "value": "Value Driver-Specific Questions (Increase Operational Efficiencies)",
                     "desc": {
                       "value": []
                     },
                     "child": [
                       {
-                        "value": "<b>Before/Negative Consequences</b>",
+                        "value": "Before/Negative Consequences",
                         "desc": {
                           "value": [
                             "Walk me through how you currently manage your application development and delivery process. What tools do you utilize and how satisfied are you with those tools?",
@@ -306,7 +306,7 @@
                         "child": "null"
                       },
                       {
-                        "value": "<b>After/Positive Business Outcomes</b>",
+                        "value": "After/Positive Business Outcomes",
                         "desc": {
                           "value": [
                             "In an ideal world, how would you like your development, security and operations teams to collaborate? Describe the current initiatives to address this.",
@@ -319,7 +319,7 @@
                         "child": "null"
                       },
                       {
-                        "value": "<b>Required Capabilities/Metrics</b>",
+                        "value": "Required Capabilities/Metrics",
                         "desc": {
                           "value": [
                             "What do you need to improve the alignment between your development, security and operations teams throughout the DevOps lifecycle?",
