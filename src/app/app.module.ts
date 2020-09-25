@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 import { Routes, ExtraOptions, RouterModule } from '@angular/router';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppComponent } from './app.component';
 import { AuthComponent } from './auth/auth.component';
@@ -36,6 +37,7 @@ const routerOptions: ExtraOptions = {
     ReactiveFormsModule,
     HttpClientModule,
     BrowserModule,
+    BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
     FontAwesomeModule
   ],

@@ -2,11 +2,20 @@ import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { DataService } from '../services/data/data.service';
 import { SafeHtmlPipe } from '../home/SafeHtml.pipe';
+import {trigger, style, animate, transition} from '@angular/animations';
 
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
-  styleUrls: ['./home.component.scss']
+  styleUrls: ['./home.component.scss'],
+  animations: [
+    trigger('fade', [ 
+      transition('void => *', [
+        style({ opacity: 0 }), 
+        animate(250, style({opacity: 1}))
+      ]) 
+    ])
+  ]
 
 })
 

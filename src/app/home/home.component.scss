@@ -1,8 +1,3 @@
-@keyframes divAnim {
-    from {left: 30px;}
-  to {left: 0px;}
-}
-
 .navbar-brand{
     font-weight: 500;
 }
@@ -13,8 +8,6 @@
     float: none;
     margin-bottom: 10px;
     max-width: 500px;
-    animation-name: divAnim;
-    animation-duration: 2s;
 }
 
 
@@ -34,7 +27,7 @@ a:hover{
     color: #0037B4;
 }
 
-.path_text{
+.path_text a{
     margin-top: auto;
     margin-bottom:auto;
     color: #0037B4;
