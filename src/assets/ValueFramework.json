@@ -276,7 +276,7 @@
                 },
                 "child": [
                   {
-                    "value": "<b>Opening Questions</b> (To Establish Credibility and Provide Relevant Insights)",
+                    "value": "Opening Questions (To Establish Credibility and Provide Relevant Insights)",
                     "desc": {
                       "value": [
                         "Thank you for chatting today. I am curious as to why you took this meeting.",
@@ -601,13 +601,13 @@
                     "child": "null"
                   },
                   {
-                    "value": "<b>Value Driver-Specific Questions (Deliver Better Products Faster)</b>",
+                    "value": "Value Driver-Specific Questions (Deliver Better Products Faster)",
                     "desc": {
                       "value": []
                     },
                     "child": [
                       {
-                        "value": "<b>Before/Negative Consequences</b>",
+                        "value": "Before/Negative Consequences",
                         "desc": {
                           "value": [
                             "Many of the companies we work with have a “digital transformation” initiative. Describe what this means for your organization. Which business units have input into forming and running it? ",
@@ -621,7 +621,7 @@
                         "child": "null"
                       },
                       {
-                        "value": "<b>After/Positive Business Outcomes</b>",
+                        "value": "After/Positive Business Outcomes",
                         "desc": {
                           "value": [
                             "How would you and your customers benefit from having confidence in your team’s ability to produce features faster?",
@@ -636,7 +636,7 @@
                         "child": "null"
                       },
                       {
-                        "value": "<b>Required Capabilities/Metrics</b>",
+                        "value": "Required Capabilities/Metrics",
                         "desc": {
                           "value": [
                             "Walk me through your top 3 ideas to accelerate your organization’s cycle time. ",
