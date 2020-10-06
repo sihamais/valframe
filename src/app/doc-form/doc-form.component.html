@@ -1,0 +1,43 @@
+<app-nav></app-nav>
+<div class="cont">
+
+    <div class="nav navbar-dark justify-content-between mx-3 mb-2">
+        <div class="left justify-content-between">
+            <div class="nav-item dropdown">
+                <button class="btn btn-light dropdown-toggle px-3 py-2 dropbtn">Add</button>
+
+                <div class="dropdown-content">
+                    <a (click)="onAddCard()">Card</a>
+
+                    <div class="dropright-item dropright parent">
+                        <a type="button" class="dropright-item dropright-toggle dropbtn">Child card to</a>
+                        <div class="dropright-content">
+                            <a class="dropright-item" *ngFor="let card of cards"
+                                (click)="onAddChild(card)">{{card.title}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="btn btn-light mx-4 px-3 py-2" (click)="onEdit()" [ngClass]="{'edit-true': this.edit}">Edit</button>
+        </div>
+        <input type="submit" value="Save" class="btn btn-primary px-3 py-2">
+    </div>
+
+    <div class="card-columns">
+        <div class="justify-content-center">
+            <div *ngFor="let card of cards">
+                <div class="card mx-auto mb-3" id="card">
+                    <div class="remove mx-1 my-1 float-right">
+                        <button *ngIf="this.edit" class="btn btn-danger py-0 px-2" (click)="onRemoveCard(card)">-</button>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+                            <h5 class="card-title text-center font-weight-normal">{{card.title}}</h5>
+                            <li class="card-text text-left" *ngFor="let point of card.content">{{point}}</li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

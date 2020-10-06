@@ -1,35 +1,46 @@
 <header>
     <nav class="navbar navbar-light bg-white justify-content-between">
+        <div class="">
             <button *ngIf="this.path.length > 0" type="button" class="btn btn-light mr-2 back"
-            (click)="searchKey(this.path[this.path.length-2])"><i class="fas fa-angle-left"></i><</button>
-            <!-- <button type="button" class="btn btn-light"
-                (click)="searchKey(this.path[this.path.length-2])"><i class="fas fa-bars">=</i>
-            </button> -->    
+                (click)="searchKey(this.path[this.path.length-2])"><i class="fas fa-angle-left"></i>Previous</button>
+            <button type="button" class="btn btn-light"><a routerLink="/newDoc">+</a></button>
+        </div>
         <div class="navbar-brand">
             <a class="navbar-brand align-self-center" (click)="firstParse()">Valframe</a>
         </div>
         <div class="nav-item"><button (click)="logOut()" class="btn btn-white auth" disabled></button></div>
     </nav>
 </header>
+<div class="row cont">
+    <div class="col-3 summary" *ngIf="this.path.length > 0">
+        <li *ngFor="let key of keys"><a [ngClass]="{'disabled' : key.child === 'null',
+        'abled': key.child!=='null'}" (click)="switchKey(this.key)">{{key.value}}</a>
+        </li>
+    </div>
+    <div class="col view mx-2">
+        <div class="path">
+            <p class="path_text align-self-center">
+                <a *ngFor="let i of path" (click)="searchKey(this.i)"> {{ i.value }} > </a>
+            </p>
+        </div>
 
-<div class="path align-items-stretch">
-    <p  class="path_text align-self-center">
-        <a *ngFor="let i of path" (click)="searchKey(this.i)"> {{ i.value }} > </a>
-    </p>
-</div>
-<div class="container-fluid mx-10">
-    <div class="card-columns justify-content-center">
-        <a @fade *ngFor="let key of keys" [ngClass]="{'disabled' : key.child === 'null',
+        <div class="card-columns">
+            <div class="justify-content-center">
+                <a @fade *ngFor="let key of keys" [ngClass]="{'disabled' : key.child === 'null',
         'abled': key.child!=='null'}" (click)="switchKey(this.key)">
-            <div class="card mx-auto mb-3" id="card">
-                <div class="card-body">
-                    <div class="card-text">
-                        <h5 class="card-title text-center font-weight-normal" [innerHTML]="key.value | safeHtml : 'html'"></h5>
-                        <li class="card-text text-left" *ngFor="let i of key.desc.value" [innerHTML]="i | safeHtml : 'html'">
-                        </li>
+                    <div class="card mx-auto mb-3" id="card">
+                        <div class="card-body">
+                            <div class="card-text">
+                                <h5 class="card-title text-center font-weight-normal"
+                                    [innerHTML]="key.value | safeHtml : 'html'"></h5>
+                                <li class="card-text text-left" *ngFor="let i of key.desc.value"
+                                    [innerHTML]="i | safeHtml : 'html'">
+                                </li>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                </a>
             </div>
-        </a>
+        </div>
     </div>
 </div>

@@ -13,11 +13,14 @@ import { DataService } from './services/data/data.service';
 import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { SafeHtmlPipe } from './home/SafeHtml.pipe';
+import { DocFormComponent } from './doc-form/doc-form.component';
+import { NavComponent } from './nav/nav.component';
 
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent, pathMatch: 'full'},
   { path: 'login', component: AuthComponent },
+  { path: 'newDoc', component: DocFormComponent },
   { path: '**', redirectTo: ''}
 ];  
 
@@ -32,6 +35,8 @@ const routerOptions: ExtraOptions = {
     AppComponent,
     AuthComponent,
     HomeComponent,
+    DocFormComponent,
+    NavComponent,
   ],
   imports: [
     ReactiveFormsModule,

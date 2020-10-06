@@ -16,4 +16,6 @@ export class DataService {
     return this.http.get(this.jsonURL);
   }
 
+  public pushJSON(){}
+
 }
