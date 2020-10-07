@@ -1,14 +1,14 @@
 <header>
     <nav class="navbar navbar-light bg-white justify-content-between">
         <div class="">
-            <button *ngIf="this.path.length > 0" type="button" class="btn btn-light mr-2 back"
-                (click)="searchKey(this.path[this.path.length-2])"><i class="fas fa-angle-left"></i>Previous</button>
-            <button type="button" class="btn btn-light"><a routerLink="/newDoc">+</a></button>
+            <a *ngIf="this.path.length > 0" class="btn btn-light mr-2 back"
+                (click)="searchKey(this.path[this.path.length-2])">Previous</a>
+            <a class="btn btn-light" routerLink="/newDoc">+</a>
         </div>
         <div class="navbar-brand">
             <a class="navbar-brand align-self-center" (click)="firstParse()">Valframe</a>
         </div>
-        <div class="nav-item"><button (click)="logOut()" class="btn btn-white auth" disabled></button></div>
+        <div class="nav-item"><a (click)="logOut()" class="btn btn-white auth" disabled></a></div>
     </nav>
 </header>
 <div class="row cont">

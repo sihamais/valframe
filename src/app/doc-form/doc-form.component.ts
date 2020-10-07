@@ -22,17 +22,20 @@ export class DocFormComponent implements OnInit {
 
   private initForm() {
     this.cards = [];
-    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"], []);
+    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"]);
     this.cards.push(newCard);
   }
 
   onAddCard(){
-    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"], []);
+    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"]);
     this.cards.push(newCard);
   }
 
   onAddChild(card: Card){
-    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"], []);
+    let newCard = new Card(this.cards.length,"Title here",["First point","Second point","Third point"]);
+    if (!card.childs){
+      card.childs=[];
+    }
     card.childs.push(newCard);
 
   }

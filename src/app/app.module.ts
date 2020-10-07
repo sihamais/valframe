@@ -14,7 +14,6 @@ import { FontAwesomeModule } from '@fortawesome/angular-fontawesome';
 import { HomeComponent } from './home/home.component';
 import { SafeHtmlPipe } from './home/SafeHtml.pipe';
 import { DocFormComponent } from './doc-form/doc-form.component';
-import { NavComponent } from './nav/nav.component';
 
 
 const appRoutes: Routes = [
@@ -36,7 +35,6 @@ const routerOptions: ExtraOptions = {
     AuthComponent,
     HomeComponent,
     DocFormComponent,
-    NavComponent,
   ],
   imports: [
     ReactiveFormsModule,
