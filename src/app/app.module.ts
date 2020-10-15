@@ -42,7 +42,7 @@ const routerOptions: ExtraOptions = {
     BrowserModule,
     BrowserAnimationsModule,
     RouterModule.forRoot(appRoutes),
-    FontAwesomeModule
+    FontAwesomeModule,
   ],
   providers: [
     SafeHtmlPipe,

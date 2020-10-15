@@ -85,3 +85,24 @@ a:hover{
     margin-bottom : 0px;
     font-size: 14px;
 }
+
+.static-card{
+    pointer-events: none;
+}
+
+.remove{
+    pointer-events: auto;
+}
+
+.editing{
+    pointer-events: auto;
+}
+
+input{
+    border: none;
+    text-align: center;
+    font-weight: 400;
+    margin-bottom: 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1.2;
+}
