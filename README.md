@@ -1,8 +1,8 @@
 # [ValFrame](https://valfra.me/)
 A different way to beautify data.
-This program extracts data from large JSONS and displays it while taking into account the hierarchy. It does it with the use of [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search) and the [breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search) algorithms.
+This program extracts data from large JSONS and displays it while taking into account the hierarchy. It does it with the use of [depth-first search](https://en.wikipedia.org/wiki/Depth-first_search) and [breadth-first search](https://en.wikipedia.org/wiki/Breadth-first_search) algorithms.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0 and is implemented as a [Single-page application](https://en.wikipedia.org/wiki/Single-page_application).
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.0 and is implemented as a [single-page application](https://en.wikipedia.org/wiki/Single-page_application).
 
 ## Push build to Gitlab Pages (branch gl-pages) and code to master
 Run `./pushy <commit message>`
