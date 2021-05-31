@@ -2,10 +2,36 @@
     font-weight: 500;
 }
 
-#card{
+header{
     z-index: 99;
-    margin: 0 auto;
-    float: none;
+    border-bottom: solid 0.5px lightgray;
+    top: 0px;
+    width: 100%;
+    position: fixed;
+}
+
+.cont{
+    margin-top: 65px;
+}
+
+.view{
+    display: block;
+}
+
+.summary {
+    border-right: solid 0.5px lightgray;
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    position: sticky;
+    left: 0;
+    padding: 20px;
+    margin-right: 20px;
+}
+
+.summary a {
+    color: #0037B4;
+}
+
+#card{
     margin-bottom: 10px;
     max-width: 500px;
 }
@@ -51,16 +77,6 @@ a:hover{
     margin-bottom : 0px;
     font-size: 14px;
 }
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
-  }
 
   .navbar a{
       color: black;

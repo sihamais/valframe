@@ -1,0 +1,77 @@
+<header>
+    <nav class="navbar navbar-light bg-white justify-content-between">
+        <div class="navbar-brand">
+            <a class="navbar-brand align-self-center" routerLink="/">Valframe</a>
+        </div>
+
+        <div class="left justify-content-between">
+            <div class="nav-item dropdown">
+                <a class="btn btn-success px-3 py-2 dropbtn">+</a>
+
+                <div class="dropdown-content">
+                    <a (click)="onAddCard()">Card</a>
+
+                    <div class="dropright-item dropright parent">
+                        <a class="dropright-item dropright-toggle dropbtn">Child card to</a>
+                        <div class="dropright-content">
+                            <a class="dropright-item" *ngFor="let card of display"
+                                (click)="onAddChild(card)">{{card.title}}</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <a class="btn btn-light mx-4 px-3 py-2" (click)="onEdit()" [ngClass]="{'edit-true': this.edit}">Edit</a>
+        </div>
+
+        <a class="btn btn-outline-primary px-3 py-2">Save</a>
+
+    </nav>
+</header>
+
+<div class="cont">
+    <div class="path">
+        <p class="path_text align-self-center">
+            <a *ngFor="let i of path" (click)="onSearchCard(this.i)"> {{ i.title}} > </a>
+        </p>
+    </div>
+    <div class="card-columns">
+        <div class="justify-content-center">
+
+            <a *ngFor="let card of display" [ngClass]="{'static-card': this.edit || !card.childs}"
+                (click)="onDepthSearch(card)">
+                <div class="card mx-auto mb-3" id="card">
+                    <div class="remove mx-1 my-1 float-right">
+                        <a *ngIf="this.edit" class="btn btn-danger py-0 px-2" (click)="onRemoveCard(card)">-</a>
+                    </div>
+                    <div class="card-body">
+                        <div class="card-text">
+
+                            <div class="title">
+                                <input #box class="card-title text-center font-weight-normal editing"
+                                    (change)="onChange(card,box.value,-1)" *ngIf="this.edit" placeholder="Title here"
+                                    value="{{card.title}}">
+                                <h5 class="card-title text-center font-weight-normal inediting" *ngIf="!this.edit">
+                                    {{card.title}}</h5>
+                            </div>
+
+                            <div *ngIf="!this.edit" class="points">
+                                <li class="card-text text-left inediting" *ngFor="let point of card.content">{{point}}
+                                </li>
+                            </div>
+                            <div *ngIf="this.edit" class="points">
+                                <li class="card-text text-left inediting" *ngFor="let point of card.content">
+                                    <input #box class="card-text text-left editing"
+                                        (change)="onChange(card,box.value,box.id)" placeholder="Content here"
+                                        value="{{point}}">
+                                </li>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+</div>

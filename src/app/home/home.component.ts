@@ -24,7 +24,7 @@ export class HomeComponent implements OnInit {
   keys = [];
   path = [];
 
-  constructor(private router: Router,
+  constructor(public router: Router,
     private dataService: DataService,
     public safeHtml : SafeHtmlPipe) { }
 
