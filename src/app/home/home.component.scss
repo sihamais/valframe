@@ -1,3 +1,7 @@
+.body {
+    height: auto;
+}
+
 .navbar-brand{
     font-weight: 500;
 }
@@ -19,8 +23,8 @@ header{
 }
 
 .summary {
+    min-height: 100%;
     border-right: solid 0.5px lightgray;
-    height: 100%; /* Full-height: remove this if you want "auto" height */
     position: sticky;
     left: 0;
     padding: 20px;
